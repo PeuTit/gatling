@@ -188,6 +188,9 @@ List of configurations used by this task:
         <!-- Will complete with an error if the simulation ends with any error status -->
         <!-- False by default; you can also use the gatling.enterprise.waitForRunEnd system property -->
         <waitForRunEnd>true</waitForRunEnd>
+        <!-- If this URL is configured, newly created packages and uploaded ones are considered as private. -->
+        <!-- Private packages are uploaded and managed through this private control plane. -->
+        <privateControlPlaneUrl>YOUR_PRIVATE_CONTROL_PLANE_URL</privateControlPlaneUrl>
     </configuration>
 </plugin>
 ```
